@@ -20,7 +20,7 @@ limitations under the License.
 
 # itercuminabs
 
-[![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] [![dependencies][dependencies-image]][dependencies-url]
+[![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] <!-- [![dependencies][dependencies-image]][dependencies-url] -->
 
 > Create an [iterator][mdn-iterator-protocol] which iteratively computes a cumulative minimum absolute value.
 
@@ -146,9 +146,9 @@ while ( true ) {
 
 ## See Also
 
--   [`@stdlib/stats/iter/cumaxabs`][@stdlib/stats/iter/cumaxabs]: create an iterator which iteratively computes a cumulative maximum absolute value.
--   [`@stdlib/stats/iter/cumin`][@stdlib/stats/iter/cumin]: create an iterator which iteratively computes a cumulative minimum value.
--   [`@stdlib/stats/iter/minabs`][@stdlib/stats/iter/minabs]: compute the minimum absolute value of all iterated values.
+-   <span class="package-name">[`@stdlib/stats/iter/cumaxabs`][@stdlib/stats/iter/cumaxabs]</span><span class="delimiter">: </span><span class="description">create an iterator which iteratively computes a cumulative maximum absolute value.</span>
+-   <span class="package-name">[`@stdlib/stats/iter/cumin`][@stdlib/stats/iter/cumin]</span><span class="delimiter">: </span><span class="description">create an iterator which iteratively computes a cumulative minimum value.</span>
+-   <span class="package-name">[`@stdlib/stats/iter/minabs`][@stdlib/stats/iter/minabs]</span><span class="delimiter">: </span><span class="description">compute the minimum absolute value of all iterated values.</span>
 
 </section>
 
@@ -199,8 +199,12 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/stats-iter-cuminabs/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/stats-iter-cuminabs?branch=main
 
+<!--
+
 [dependencies-image]: https://img.shields.io/david/stdlib-js/stats-iter-cuminabs.svg
 [dependencies-url]: https://david-dm.org/stdlib-js/stats-iter-cuminabs/main
+
+-->
 
 [chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
 [chat-url]: https://gitter.im/stdlib-js/stdlib/
