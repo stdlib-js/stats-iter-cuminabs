@@ -1,0 +1,46 @@
+{
+  "name": "@stdlib/stats-iter-cuminabs",
+  "version": "0.0.0",
+  "description": "Create an iterator which iteratively computes a cumulative minimum absolute value.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "./mod.js",
+  "homepage": "https://stdlib.io",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/stats-iter-cuminabs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "keywords": [
+    "stdlib",
+    "stdmath",
+    "statistics",
+    "stats",
+    "mathematics",
+    "math",
+    "minimum",
+    "min",
+    "extreme",
+    "extent",
+    "range",
+    "cumulative min",
+    "cumulative minimum",
+    "cumulative",
+    "cmin",
+    "cummin",
+    "absolute",
+    "value",
+    "abs",
+    "math.abs",
+    "magnitude",
+    "iterator",
+    "iterable",
+    "iterate"
+  ],
+  "funding": {
+    "type": "patreon",
+    "url": "https://www.patreon.com/athan"
+  }
+}
