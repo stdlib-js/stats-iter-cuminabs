@@ -32,14 +32,30 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/stats-iter-cuminabs
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import itercuminabs from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-iter-cuminabs@esm/index.mjs';
+var itercuminabs = require( '@stdlib/stats-iter-cuminabs' );
 ```
 
 #### itercuminabs( iterator )
@@ -47,7 +63,7 @@ import itercuminabs from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-iter-cumin
 Returns an [iterator][mdn-iterator-protocol] which iteratively computes a cumulative minimum absolute value.
 
 ```javascript
-import array2iterator from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-to-iterator@esm/index.mjs';
+var array2iterator = require( '@stdlib/array-to-iterator' );
 
 var arr = array2iterator( [ 2.0, 1.0, 3.0, -7.0, -5.0 ] );
 var it = itercuminabs( arr );
@@ -92,14 +108,9 @@ m = it.next().value;
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import runif from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-iter-uniform@esm/index.mjs';
-import itercuminabs from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-iter-cuminabs@esm/index.mjs';
+```javascript
+var runif = require( '@stdlib/random-iter-uniform' );
+var itercuminabs = require( '@stdlib/stats-iter-cuminabs' );
 
 // Create an iterator for generating uniformly distributed pseudorandom numbers:
 var rand = runif( -10.0, 10.0, {
@@ -121,10 +132,6 @@ while ( true ) {
         break;
     }
 }
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -164,7 +171,7 @@ while ( true ) {
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -220,6 +227,7 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 [deno-url]: https://github.com/stdlib-js/stats-iter-cuminabs/tree/deno
 [umd-url]: https://github.com/stdlib-js/stats-iter-cuminabs/tree/umd
 [esm-url]: https://github.com/stdlib-js/stats-iter-cuminabs/tree/esm
+[branches-url]: https://github.com/stdlib-js/stats-iter-cuminabs/blob/main/branches.md
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/stats-iter-cuminabs/main/LICENSE
 
@@ -227,11 +235,11 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/stats/iter/cumaxabs]: https://github.com/stdlib-js/stats-iter-cumaxabs/tree/esm
+[@stdlib/stats/iter/cumaxabs]: https://github.com/stdlib-js/stats-iter-cumaxabs
 
-[@stdlib/stats/iter/cumin]: https://github.com/stdlib-js/stats-iter-cumin/tree/esm
+[@stdlib/stats/iter/cumin]: https://github.com/stdlib-js/stats-iter-cumin
 
-[@stdlib/stats/iter/minabs]: https://github.com/stdlib-js/stats-iter-minabs/tree/esm
+[@stdlib/stats/iter/minabs]: https://github.com/stdlib-js/stats-iter-minabs
 
 <!-- </related-links> -->
 
