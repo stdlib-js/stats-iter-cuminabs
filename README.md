@@ -50,6 +50,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import itercuminabs from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-iter-cuminabs@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/stats-iter-cuminabs/tags). For example,
+
+```javascript
 import itercuminabs from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-iter-cuminabs@v0.2.2-esm/index.mjs';
 ```
 
@@ -110,7 +115,7 @@ m = it.next().value;
 <script type="module">
 
 import runif from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-iter-uniform@esm/index.mjs';
-import itercuminabs from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-iter-cuminabs@v0.2.2-esm/index.mjs';
+import itercuminabs from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-iter-cuminabs@esm/index.mjs';
 
 // Create an iterator for generating uniformly distributed pseudorandom numbers:
 var rand = runif( -10.0, 10.0, {
