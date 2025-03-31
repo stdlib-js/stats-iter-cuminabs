@@ -43,32 +43,14 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/stats-iter-cuminabs
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
--   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-var itercuminabs = require( '@stdlib/stats-iter-cuminabs' );
+import itercuminabs from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-iter-cuminabs@esm/index.mjs';
 ```
 
 #### itercuminabs( iterator )
@@ -76,7 +58,7 @@ var itercuminabs = require( '@stdlib/stats-iter-cuminabs' );
 Returns an [iterator][mdn-iterator-protocol] which iteratively computes a cumulative minimum absolute value.
 
 ```javascript
-var array2iterator = require( '@stdlib/array-to-iterator' );
+import array2iterator from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-to-iterator@esm/index.mjs';
 
 var arr = array2iterator( [ 2.0, 1.0, 3.0, -7.0, -5.0 ] );
 var it = itercuminabs( arr );
@@ -121,9 +103,14 @@ m = it.next().value;
 
 <!-- eslint no-undef: "error" -->
 
-```javascript
-var runif = require( '@stdlib/random-iter-uniform' );
-var itercuminabs = require( '@stdlib/stats-iter-cuminabs' );
+```html
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<script type="module">
+
+import runif from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-iter-uniform@esm/index.mjs';
+import itercuminabs from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-iter-cuminabs@esm/index.mjs';
 
 // Create an iterator for generating uniformly distributed pseudorandom numbers:
 var rand = runif( -10.0, 10.0, {
@@ -145,6 +132,10 @@ while ( true ) {
         break;
     }
 }
+
+</script>
+</body>
+</html>
 ```
 
 </section>
@@ -184,7 +175,7 @@ while ( true ) {
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -251,11 +242,11 @@ Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/stats/iter/cumaxabs]: https://github.com/stdlib-js/stats-iter-cumaxabs
+[@stdlib/stats/iter/cumaxabs]: https://github.com/stdlib-js/stats-iter-cumaxabs/tree/esm
 
-[@stdlib/stats/iter/cumin]: https://github.com/stdlib-js/stats-iter-cumin
+[@stdlib/stats/iter/cumin]: https://github.com/stdlib-js/stats-iter-cumin/tree/esm
 
-[@stdlib/stats/iter/minabs]: https://github.com/stdlib-js/stats-iter-minabs
+[@stdlib/stats/iter/minabs]: https://github.com/stdlib-js/stats-iter-minabs/tree/esm
 
 <!-- </related-links> -->
 
